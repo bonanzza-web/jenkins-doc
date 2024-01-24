@@ -4,7 +4,7 @@ pipeline {
 		stage ('first') {
 			steps {
 				echo "Zalupa"
-				ls -la
+				sh "ls -la"
 			}
 		}
 	}
