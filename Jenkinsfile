@@ -1,5 +1,5 @@
 pipeline {
-	agent any
+	agent { docker { image 'httpd:latest' }}
 	stages {
 		stage ('first') {
 			steps {
