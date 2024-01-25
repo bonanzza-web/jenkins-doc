@@ -1,10 +1,10 @@
 pipeline {
-	agent { docker { image 'httpd' }}
+	agent { docker { image 'python:latest' }}
 	stages {
 		stage ('first') {
 			steps {
 				echo "Zalupa"
-				sh "ls -la"
+				sh "python --version"
 			}
 		}
 	}
